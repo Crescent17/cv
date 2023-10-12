@@ -3,9 +3,8 @@ import styled from "styled-components";
 const SocialMediaContainer = styled.div`
   padding: 2rem 3rem;
   display: flex;
-  justify-self: end;
+  justify-self: center;
   justify-content: space-between;
-  margin-right: 4rem;
   z-index: 1;
   gap: 1rem;
 `
