@@ -12,6 +12,21 @@ const TechSection = styled.section`
   background: ${styleVariables.colors.gradient};
   border-radius: 2rem;
   grid-gap: 4rem;
+  position: relative;
+  overflow: hidden;
+`
+
+const Video = styled.video`
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: .2;
 `
 
 const H2 = styled.h2`
@@ -22,6 +37,7 @@ const H2 = styled.h2`
   text-shadow: -4px 4px 1px black;
   transition: all .2s;
   letter-spacing: 10px;
+  z-index: 1;
 
   &:hover {
     transform: skewX(10deg) scale(1.1);
@@ -35,6 +51,9 @@ const H3 = styled.h3`
 export default function Technologies() {
     return (
         <TechSection id="tech">
+            <Video id="background-video" autoPlay loop muted playbackRate="-0.5">
+                <source src="../../../public/video/video%20(2160p).mp4" type="video/mp4"/>
+            </Video>
             <H2>TECHNOLOGIES</H2>
             <TechCard>
                 <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
