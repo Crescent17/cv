@@ -19,7 +19,7 @@ const TechSvg = styled.svg`
 `
 
 const TechSvgFromTop = styled(TechSvg)`
-  animation: moveToBottom ${props => props.duration}s linear infinite;
+  animation: moveToBottom ${props => props.$duration}s linear infinite;
   @keyframes moveToBottom {
     0% {
       top: -10%;
@@ -34,7 +34,7 @@ const TechSvgFromTop = styled(TechSvg)`
 `
 
 const TechSvgFromBottom = styled(TechSvg)`
-  animation: moveToTop ${props => props.duration}s linear infinite;
+  animation: moveToTop ${props => props.$duration}s linear infinite;
   @keyframes moveToTop {
     0% {
       top: 100%;
@@ -65,7 +65,7 @@ export default function AnimatedBackground() {
     return (
         <Background>
             <Tech>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 48 48">
                     <linearGradient id="QzbsZZGqvt5vTzXzFrTWxa_j9DnICNnlhGk_gr1" x1="19.369" x2="32.915"
                                     y1="6.256" y2="43.472" gradientUnits="userSpaceOnUse">
@@ -96,7 +96,7 @@ export default function AnimatedBackground() {
                         d="M24,5.996V6l12.987,28.004h-4.409l-2.783-6H24V28h-5.795l-2.783,6h-4.409L24,5.996 M20.06,24H24v0.004h3.94L24,15.508 v-0.004L20.06,24 M24.5,3.733l-0.954,2.052L10.559,33.79L10.23,34.5h0.783h4.409h0.319l0.134-0.29l2.648-5.71H23.5l0.5,0.004 h5.476l2.648,5.71l0.134,0.29h0.319h4.409h0.783l-0.329-0.71L24.5,5.89V3.733L24.5,3.733z M20.843,23.5l3.156-6.806l3.158,6.81 H24.5L24,23.5H20.843L20.843,23.5z"
                         opacity=".07"></path>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect>
                     <polygon fill="#fff"
@@ -104,7 +104,7 @@ export default function AnimatedBackground() {
                     <path fill="#fff"
                           d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"></path>
                 </TechSvgFromBottom>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 80 80">
                     <path fill="#dcd5f2"
                           d="M40,61.5C18.22,61.5,0.5,51.855,0.5,40S18.22,18.5,40,18.5S79.5,28.145,79.5,40S61.78,61.5,40,61.5z"></path>
@@ -117,7 +117,7 @@ export default function AnimatedBackground() {
                               d="M49.072,33.212C48.193,32.348,46.644,32,44.334,32h-5.538L40,26h-2.1L34,46h1.99l2.388-12h0.419 h5.538c2.338,0,3.094,0.4,3.335,0.637c0.343,0.338,0.424,1.226,0.217,2.363l-1.767,9h2.106l1.626-8.63 C50.199,35.462,49.936,34.062,49.072,33.212z"></path>
                     </g>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
                     <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
@@ -126,14 +126,14 @@ export default function AnimatedBackground() {
                     <path fill="#EEE"
                           d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
                 </TechSvgFromBottom>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 48 48">
                     <path fill="#0277BD"
                           d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path>
                     <path fill="#FFC107"
                           d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
                     <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
@@ -142,7 +142,7 @@ export default function AnimatedBackground() {
                     <path fill="#EEE"
                           d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
                 </TechSvgFromBottom>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 48 48">
                     <path fill="#7e57c2"
                           d="M23,4c-6.617,0-12,7.27-12,16.205c0,4.834,1.582,9.169,4.078,12.136C15.03,32.554,15,32.773,15,33	c0,1.657,1.343,3,3,3s3-1.343,3-3s-1.343-3-3-3c-0.315,0-0.612,0.062-0.897,0.152C15.206,27.731,14,24.175,14,20.205	C14,12.924,18.037,7,23,7c3.837,0,7.111,3.547,8.404,8.518c1.122,0.346,2.237,0.782,3.33,1.308C33.579,9.508,28.759,4,23,4z"></path>
@@ -151,7 +151,7 @@ export default function AnimatedBackground() {
                     <path fill="#7e57c2"
                           d="M35,28.992C35,27.34,33.657,26,32,26s-3,1.34-3,2.992c0,0.669,0.228,1.281,0.6,1.779	c-1.279,2.802-3.744,5.567-7.062,7.578c-3.865,2.344-8.185,3.202-11.555,2.302c-1.932-0.518-3.391-1.586-4.218-3.09	c-1.702-3.094-0.521-7.376,2.61-10.988c-0.323-1.144-0.562-2.34-0.706-3.575c-5.07,4.797-7.109,11.323-4.532,16.009	c1.23,2.238,3.33,3.809,6.071,4.542c1.121,0.3,2.318,0.447,3.559,0.447c3.346,0,7.007-1.068,10.326-3.08	c3.836-2.325,6.683-5.577,8.209-8.962C33.815,31.801,35,30.541,35,28.992z"></path>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <path fill="#388e3c"
                           d="M17.204 19.122l-4.907 2.715C12.113 21.938 12 22.126 12 22.329v5.433c0 .203.113.39.297.492l4.908 2.717c.183.101.41.101.593 0l4.907-2.717C22.887 28.152 23 27.965 23 27.762v-5.433c0-.203-.113-.39-.297-.492l-4.906-2.715c-.092-.051-.195-.076-.297-.076-.103 0-.205.025-.297.076M42.451 24.013l-.818.452c-.031.017-.049.048-.049.082v.906c0 .034.019.065.049.082l.818.453c.031.017.068.017.099 0l.818-.453c.03-.017.049-.048.049-.082v-.906c0-.034-.019-.065-.05-.082l-.818-.452C42.534 24.004 42.517 24 42.5 24S42.466 24.004 42.451 24.013"></path>
@@ -164,20 +164,20 @@ export default function AnimatedBackground() {
                     <path fill="#37474f"
                           d="M47.703 21.791l-4.906-2.715C42.705 19.025 42.602 19 42.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C37.114 21.892 37 22.084 37 22.294v5.411c0 .209.114.402.297.503l4.908 2.717c.184.102.409.102.593 0l2.263-1.253c.207-.115.206-.412-.002-.526l-4.924-2.687C40.052 26.412 40 26.325 40 26.231v-2.466c0-.092.05-.177.13-.221l2.235-1.236h-.001c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237c.08.044.13.129.13.221v2.012c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393c.148-.086.24-.245.24-.417v-1.88C48 22.085 47.886 21.892 47.703 21.791zM10.703 21.791l-4.906-2.715C5.705 19.025 5.602 19 5.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C.114 21.892 0 22.084 0 22.294v7.465c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393C2.909 28.488 3 28.329 3 28.157v-4.393c0-.092.05-.177.13-.221l2.235-1.236H5.365c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237C7.95 23.588 8 23.673 8 23.765v4.393c0 .172.091.331.24.417l2.398 1.393c.075.043.167.043.242.001C10.954 29.925 11 29.845 11 29.759v-7.464C11 22.085 10.886 21.892 10.703 21.791z"></path>
                 </TechSvgFromBottom>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 48 48">
                     <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
                     <path fill="#000001"
                           d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <path fill="#8bc34a"
                           d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"></path>
                     <path fill="#fff"
                           d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"></path>
                 </TechSvgFromBottom>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 48 48">
                     <path fill="#F44336"
                           d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path>
@@ -196,7 +196,7 @@ export default function AnimatedBackground() {
                               d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"></path>
                     </g>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <path fill="#004d40" fillRule="evenodd"
                           d="M8,16v12.646C6.655,28.9,5.949,29,4.878,29 C1.67,28.997,0,27.565,0,24.816c0-2.649,1.771-4.368,4.516-4.368c0.426,0,0.75,0.033,1.143,0.134V16H8z M5.659,22.672 c-0.308-0.1-0.561-0.134-0.886-0.134c-1.328,0-2.096,0.809-2.096,2.228c0,1.381,0.734,2.143,2.079,2.143 c0.291,0,0.527-0.016,0.903-0.067V22.672L5.659,22.672z"
@@ -219,7 +219,7 @@ export default function AnimatedBackground() {
                           d="M43.566,20.046c2.753,0,4.434,1.66,4.434,4.348 c0,2.756-1.752,4.483-4.544,4.483c-2.756,0-4.456-1.659-4.456-4.33C39.005,21.774,40.757,20.046,43.566,20.046z M43.509,26.752 c1.057,0,1.681-0.838,1.681-2.294c0-1.439-0.607-2.294-1.663-2.294c-1.093,0-1.718,0.838-1.718,2.294 C41.81,25.914,42.438,26.752,43.509,26.752L43.509,26.752z"
                           clipRule="evenodd"></path>
                 </TechSvgFromBottom>
-                <TechSvgFromTop duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromTop $duration={getRandomDuration(9)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 40 40">
                     <path fill="#4e7ab5"
                           d="M20,28.9C8.598,28.9,0,25.17,0,20s8.598-9,20-9s20,3.83,20,9S31.402,28.9,20,28.9z M20,13.932 c-9.729,0-17.125,3.266-17.125,6.131S10.271,26.068,20,26.068s17.125-3.266,17.125-6.131S29.729,13.932,20,13.932z"></path>
@@ -240,7 +240,7 @@ export default function AnimatedBackground() {
                               d="M27.599,36.997C27.599,36.997,27.599,36.997,27.599,36.997c-4.187-0.001-10.224-5.327-14.681-12.953 C9.036,17.401,7.227,10.5,8.308,6.463c0.372-1.39,1.065-2.383,2.062-2.952C10.964,3.172,11.647,3,12.4,3 c4.185,0,10.221,5.328,14.679,12.956c3.883,6.642,5.692,13.543,4.61,17.582c-0.371,1.389-1.064,2.381-2.059,2.948 C29.036,36.825,28.353,36.997,27.599,36.997z M12.4,4c-0.577,0-1.094,0.128-1.535,0.379c-0.756,0.432-1.291,1.219-1.592,2.342 c-0.999,3.734,0.813,10.493,4.508,16.818C18,30.757,23.812,35.996,27.599,35.997l0,0c0.578,0,1.095-0.128,1.536-0.38 c0.754-0.43,1.289-1.217,1.589-2.338c1-3.735-0.812-10.494-4.508-16.818C21.996,9.241,16.187,4,12.4,4z"></path>
                     </g>
                 </TechSvgFromTop>
-                <TechSvgFromBottom duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <TechSvgFromBottom $duration={getRandomDuration(8)} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                    viewBox="0 0 48 48">
                     <path fill="#212121"
                           d="M18.974,31.5c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5v-14c0-0.653,0.423-1.231,1.045-1.43 c0.625-0.198,1.302,0.03,1.679,0.563l16.777,23.704C40.617,36.709,44,30.735,44,24c0-11-9-20-20-20S4,13,4,24s9,20,20,20 c3.192,0,6.206-0.777,8.89-2.122L18.974,22.216V31.5z M28.974,16.5c0-0.828,0.671-1.5,1.5-1.5s1.5,0.672,1.5,1.5v13.84l-3-4.227 V16.5z"></path>
