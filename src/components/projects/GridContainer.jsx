@@ -10,15 +10,7 @@ const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   transition: all 1s;
   transform: translateX(${props => {
-    if (props.$number === 1 && props.$currentSlide === 1) return "0"
-    if (props.$number === 1 && props.$currentSlide === 2) return "-100%"
-    if (props.$number === 1 && props.$currentSlide === 3) return "-200%"
-    if (props.$number === 2 && props.$currentSlide === 1) return "100%"
-    if (props.$number === 2 && props.$currentSlide === 2) return "0"
-    if (props.$number === 2 && props.$currentSlide === 3) return "-100%"
-    if (props.$number === 3 && props.$currentSlide === 1) return "200%"
-    if (props.$number === 3 && props.$currentSlide === 2) return "100%"
-    if (props.$number === 3 && props.$currentSlide === 3) return "0"
+    return `${(props.$number - props.$currentSlide) * 100}%`
   }});
 `
 
