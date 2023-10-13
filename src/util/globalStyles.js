@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     background: url("../../public/img/background.jpg");
     background-size: cover;
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
   }
 
   a {
