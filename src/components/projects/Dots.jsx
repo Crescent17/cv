@@ -16,7 +16,7 @@ const Dot = styled.div`
   height: 2.5rem;
   border-radius: 500px;
   cursor: pointer;
-  border: 1px solid #495057;
+  border: 2px solid #12b886;
   top: 0;
   left: 0;
   transition: all .5s;
@@ -24,7 +24,7 @@ const Dot = styled.div`
   &:nth-child(${props => props.$currentslide}) {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: #74c0fc;
+    background-color: #12b886;
   }
 `
 
