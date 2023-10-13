@@ -6,7 +6,7 @@ import SlideImage from "./SlideImage.jsx";
 import GridContainer from "./GridContainer.jsx";
 import Buttons from "./Buttons.jsx";
 
-const Slider = styled.section`
+const SliderStyled = styled.section`
   position: relative;
   height: 60rem;
   max-width: 100rem;
@@ -27,11 +27,11 @@ const TextBlock = styled.div`
 
 const numberOfSlides = 3
 
-export default function ProjectSlider() {
+export default function Slider() {
     const [currentSlide, setCurrentSlide] = useState(1)
 
     return (
-        <Slider id="projects" $number={currentSlide}>
+        <SliderStyled id="projects" $number={currentSlide}>
             <Buttons currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} numberOfSlides={numberOfSlides}/>
             <GridContainer number={1} currentSlide={currentSlide}>
                 <SlideImage img='1.png'/>
@@ -52,6 +52,6 @@ export default function ProjectSlider() {
                     possimus quaerat quis quo sint voluptate. In.</TextBlock>
             </GridContainer>
             <Dots numOfSlides={numberOfSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
-        </Slider>
+        </SliderStyled>
     )
 }
