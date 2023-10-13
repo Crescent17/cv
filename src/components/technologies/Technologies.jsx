@@ -6,7 +6,7 @@ import {Svg} from "../socialMedia/SocialMedia.jsx";
 const TechSection = styled.section`
   display: grid;
   max-width: 140rem;
-  margin: 0 auto;
+  margin: 0 auto 20rem;
   padding: 6rem 5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background: ${styleVariables.colors.gradient};
@@ -51,7 +51,7 @@ const H3 = styled.h3`
 export default function Technologies() {
     return (
         <TechSection id="tech">
-            <Video id="background-video" autoPlay loop muted playbackRate="-0.5">
+            <Video id="background-video" autoPlay loop muted>
                 <source src="../../../public/video/video%20(2160p).mp4" type="video/mp4"/>
             </Video>
             <H2>TECHNOLOGIES</H2>
@@ -123,6 +123,12 @@ export default function Technologies() {
                           d="M35,28.992C35,27.34,33.657,26,32,26s-3,1.34-3,2.992c0,0.669,0.228,1.281,0.6,1.779	c-1.279,2.802-3.744,5.567-7.062,7.578c-3.865,2.344-8.185,3.202-11.555,2.302c-1.932-0.518-3.391-1.586-4.218-3.09	c-1.702-3.094-0.521-7.376,2.61-10.988c-0.323-1.144-0.562-2.34-0.706-3.575c-5.07,4.797-7.109,11.323-4.532,16.009	c1.23,2.238,3.33,3.809,6.071,4.542c1.121,0.3,2.318,0.447,3.559,0.447c3.346,0,7.007-1.068,10.326-3.08	c3.836-2.325,6.683-5.577,8.209-8.962C33.815,31.801,35,30.541,35,28.992z"></path>
                 </Svg>
                 <H3>Redux</H3>
+            </TechCard>
+            <TechCard>
+                <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                    <rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect><polygon fill="#fff" points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"></polygon><path fill="#fff" d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"></path>
+                </Svg>
+                <H3>TypeScript</H3>
             </TechCard>
             <TechCard>
                 <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
