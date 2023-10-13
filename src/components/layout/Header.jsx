@@ -18,6 +18,19 @@ const HeaderStyled = styled.main`
   z-index: 2;
   overflow: hidden;
   position: relative;
+  animation: show 1.5s normal;
+
+  @keyframes show {
+    0% {
+      transform: translateX(100%);
+    }
+    80% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 `
 
 export default function Header() {
