@@ -36,7 +36,7 @@ const FigCaption = styled.figcaption`
 export default function Avatar() {
     return (
         <figure>
-            <Img src="../../../public/img/Profile.png" alt="My profile photo"/>
+            <Img src="/img/Profile.png" alt="My profile photo"/>
             <FigCaption>Marat Hajybalayeu</FigCaption>
         </figure>
     )

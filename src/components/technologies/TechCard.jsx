@@ -4,7 +4,7 @@ const TechCardStyled = styled.div`
   position: relative;
   max-width: 100%;
   padding: 3rem 2rem;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../public/img/starry-night-sky.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/starry-night-sky.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;

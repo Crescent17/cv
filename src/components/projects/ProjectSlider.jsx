@@ -52,19 +52,19 @@ const Slide = styled.div`
 `
 
 const SlideFirst = styled(Slide)`
-  background: url("../../../public/img/1.png");
+  background: url("/img/1.png");
   background-size: cover;
   transform: translateX(${props => props.number === 1 ? 1 : props.number === 2 ? '-100%' : '-200%'});
 `
 
 const SlideSecond = styled(Slide)`
-  background: url("../../../public/img/2.png");
+  background: url("/img/2.png");
   background-size: cover;
   transform: translateX(${props => props.number === 2 ? 1 : props.number === 1 ? '100%' : '-100%'});
 `
 
 const SlideThird = styled(Slide)`
-  background: url("../../../public/img/3.png");
+  background: url("/img/3.png");
   background-size: cover;
   transform: translateX(${props => props.number === 3 ? 1 : props.number === 1 ? '200%' : '100%'});
 `

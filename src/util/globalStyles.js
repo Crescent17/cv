@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     padding: 3rem 20rem;
-    background: url("../../public/img/background.jpg");
+    background: url("/img/background.jpg");
     background-size: cover;
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;

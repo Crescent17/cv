@@ -73,7 +73,7 @@ export default function Navigation() {
         <Nav>
             <Ul>
                 <Li>
-                    <Img src="../../../public/img/Logo.png" alt="Crescent dev logo"/>
+                    <Img src="/img/Logo.png" alt="Crescent dev logo"/>
                     CRESCENT DEV
                 </Li>
                 <Li><a href="#tech">Technologies</a></Li>
