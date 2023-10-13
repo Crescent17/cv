@@ -35,21 +35,15 @@ export default function Slider() {
             <Buttons currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} numberOfSlides={numberOfSlides}/>
             <GridContainer number={1} currentSlide={currentSlide}>
                 <SlideImage img='1.png'/>
-                <TextBlock>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda culpa debitis
-                    delectus eum ex, facere facilis ipsum iste laborum necessitatibus optio, provident quas quisquam
-                    repellat rerum saepe, unde voluptate?</TextBlock>
+                <TextBlock>Omnifood</TextBlock>
             </GridContainer>
             <GridContainer number={2} currentSlide={currentSlide}>
                 <SlideImage img='2.png'/>
-                <TextBlock>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi autem, doloremque enim
-                    expedita fuga, ipsam magnam natus non nostrum omnis optio possimus ratione sunt totam, velit
-                    voluptatibus? A, accusantium?</TextBlock>
+                <TextBlock>Natours</TextBlock>
             </GridContainer>
             <GridContainer number={3} currentSlide={currentSlide}>
                 <SlideImage img='3.png'/>
-                <TextBlock>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto, atque consequuntur
-                    eligendi eos esse impedit labore laboriosam laudantium maxime, necessitatibus odio perspiciatis
-                    possimus quaerat quis quo sint voluptate. In.</TextBlock>
+                <TextBlock>Forkify</TextBlock>
             </GridContainer>
             <Dots numOfSlides={numberOfSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
         </SliderStyled>
