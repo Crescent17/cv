@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {styleVariables} from "../../util/styleVariables.js";
+import {FormattedMessage} from "react-intl";
 
 const Nav = styled.nav`
   background-image: ${styleVariables.colors.gradient};
@@ -10,7 +11,7 @@ const Nav = styled.nav`
   border-radius: 2rem;
   display: flex;
   color: #ffdeeb;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Poiret One', sans-serif;
 `
 
 const Ul = styled.ul`
@@ -47,25 +48,7 @@ const Li = styled.li`
 
 const Img = styled.img`
   height: 10rem;
-  animation: pulse 4s linear infinite;
   margin-right: 2rem;
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      filter: drop-shadow(-3px 3px 1px black);
-    }
-
-    50% {
-      transform: scale(1.2);
-      filter: drop-shadow(-3px 3px 3px black);
-    }
-
-    100% {
-      transform: scale(1);
-      filter: drop-shadow(-3px 3px 1px black);
-    }
-  }
 `
 
 export default function Navigation() {
@@ -76,9 +59,9 @@ export default function Navigation() {
                     <Img src="/img/Logo.png" alt="Crescent dev logo"/>
                     CRESCENT DEV
                 </Li>
-                <Li><a href="#tech">Technologies</a></Li>
-                <Li><a href="#projects">Projects</a></Li>
-                <Li><a href="#">About me</a></Li>
+                <Li><a href="#tech"><FormattedMessage id="technologies"/></a></Li>
+                <Li><a href="#projects"><FormattedMessage id="projects"/></a></Li>
+                <Li><a href="#"><FormattedMessage id="about-me"/></a></Li>
             </Ul>
         </Nav>
     )
