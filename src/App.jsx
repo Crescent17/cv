@@ -7,6 +7,7 @@ import ChangeLanguage from "./components/language/ChangeLanguage.jsx";
 import {IntlProvider} from "react-intl";
 import {useState} from "react";
 import translations from './util/translations.json'
+import Footer from "./components/layout/Footer.jsx";
 
 export default function App() {
     const [locale, setLocale] = useState('en')
@@ -20,6 +21,7 @@ export default function App() {
                 <Header/>
                 <Technologies/>
                 <Slider/>
+                <Footer/>
             </IntlProvider>
         </div>
     )
