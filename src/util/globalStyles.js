@@ -5,6 +5,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+
+    &:focus-visible {
+      outline: 2px ridge #fa5252;
+    }
   }
 
   html {
@@ -15,16 +19,16 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     box-sizing: border-box;
-    padding: 3rem 20rem;
     background: url("/img/background.jpg");
     background-size: cover;
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
+    color: #ffdeeb;;
   }
 
   a {
     text-decoration: none;
-    color: #ffdeeb;
+    color: inherit;
   }
 `
 
