@@ -6,12 +6,15 @@ const Nav = styled.nav`
   background-image: ${styleVariables.colors.gradient};
   margin: 3rem auto 10rem;
   padding: 5rem;
-  width: 70%;
+  width: ${props => props.$headerInView || props.$headerInView === undefined ? '70%' : '100%'};
   max-height: 4rem;
-  border-radius: 2rem;
+  border-radius: ${props => props.$headerInView || props.$headerInView === undefined ? '2rem' : 0};
   display: flex;
   color: #ffdeeb;
   font-family: 'Poiret One', sans-serif;
+  z-index: 100;
+  position: ${props => props.$headerInView || 'sticky'};
+  top: ${props => props.$headerInView || 0};
 `
 
 const Ul = styled.ul`
@@ -51,9 +54,10 @@ const Img = styled.img`
   margin-right: 2rem;
 `
 
-export default function Navigation() {
+export default function Navigation({headerInView}) {
+    console.log(headerInView)
     return (
-        <Nav>
+        <Nav $headerInView={headerInView}>
             <Ul>
                 <Li>
                     <Img src="/img/Logo.png" alt="Crescent dev logo"/>
