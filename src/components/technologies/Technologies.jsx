@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {styleVariables} from "../../util/styleVariables.js";
 import {TechCard} from "./TechCard.jsx";
 import {Svg} from "../socialMedia/SocialMedia.jsx";
+import {FormattedMessage} from "react-intl";
 
 const TechSection = styled.section`
   display: grid;
@@ -38,6 +39,7 @@ const H2 = styled.h2`
   transition: all .2s;
   letter-spacing: 10px;
   z-index: 1;
+  text-transform: uppercase;
 
   &:hover {
     transform: skewX(10deg) scale(1.1);
@@ -54,7 +56,7 @@ export default function Technologies() {
             <Video id="background-video" autoPlay loop muted>
                 <source src="/video/video%20(2160p).mp4" type="video/mp4"/>
             </Video>
-            <H2>TECHNOLOGIES</H2>
+            <H2><FormattedMessage id="technologies"/></H2>
             <TechCard>
                 <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
                     <linearGradient id="SNASnMitCxQrIYk4GDibta_v8RpPQUwv0N8_gr1" x1="18.208" x2="34.159" y1="2.413"

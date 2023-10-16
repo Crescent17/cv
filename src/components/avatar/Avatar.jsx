@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {FormattedMessage} from "react-intl";
 
 const Img = styled.img`
   justify-self: end;
@@ -37,7 +38,7 @@ export default function Avatar() {
     return (
         <figure>
             <Img src="/img/Profile.png" alt="My profile photo"/>
-            <FigCaption>Marat Hajybalayeu</FigCaption>
+            <FigCaption><FormattedMessage id="name"/></FigCaption>
         </figure>
     )
 }
