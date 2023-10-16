@@ -3,24 +3,77 @@
     "name": "Marat Hajybalayeu",
     "technologies": "Technologies",
     "projects": "Projects",
-    "about-me": "About me",
+    "contact-me": "Contact me",
     "technical-skills": "Technical skills\uD83D\uDD27",
     "technical-skills-description": "I am a Frontend Developer, who creates interactive web applications using the following tools: HTML, CSS, JS, React and Redux. In past I used to work in ITechArt company as a Java Backend Developer using Spring Boot, creating API servers with microservice architecture.",
     "languages": "Languages\uD83D\uDDE3\uFE0F",
     "languages-description": "My native language is Russian, but I am also able to speak Italian (A2) and English (~B2) good enough as it seems to me :)",
     "personal-info": "A little bit about me\uD83E\uDDD1\uD83C\uDFFB",
-    "personal-info-description": "I am 22 years old, I live in Belarus and I really like coding and learn it every day. In my spare time I like editing photos in Photoshop and videos in Premiere Pro, also I like watching movies and TV shows with my girlfriend, hanging out with my friends and have a great time. I am an outgoing, kind and very polite person. Also I am very persistent, so that if I have some problems I promise myself that I will definitely find the way to fix it. I will be really glad to help you with all I can\uD83D\uDE0A"
+    "personal-info-description": "I am 22 years old, I live in Belarus and I really like coding and learn it every day. In my spare time I like editing photos in Photoshop and videos in Premiere Pro, also I like watching movies and TV shows with my girlfriend, hanging out with my friends and have a great time. I am an outgoing, kind and very polite person. Also I am very persistent, so that if I have some problems I promise myself that I will definitely find the way to fix it. I will be really glad to help you with all I can\uD83D\uDE0A",
+    "build": "Built and designed by",
+    "button-text": "Open",
+    "slider-projects": [
+      {
+        "title": "Omnifood",
+        "description": "Omnifood",
+        "link": "https://omnifood-crescent.netlify.app/"
+      },
+      {
+        "title": "Natours",
+        "description": "Natours",
+        "link": "https://natours-crescent.netlify.app/"
+      },
+      {
+        "title": "Forkify",
+        "description": "Forkify",
+        "link": "https://forkify-crescent.netlify.app/"
+      },
+      {
+        "title": "Worldwise",
+        "description": "Worldwise",
+        "link": "https://worldwise-crescent.netlify.app/"
+      },
+      {
+        "title": "React Pizza",
+        "description": "This is a web application built with React, Redux and Tailwind. It's a pizzeria website where you can order pizza online",
+        "link": "https://react-pizza-crescent.netlify.app/"
+      }
+    ]
   },
   "ru": {
     "name": "Марат Гаджибалаев",
     "technologies": "Технологии",
     "projects": "Проекты",
-    "about-me": "Обо мне",
+    "contact-me": "Связаться со мной",
     "technical-skills": "Технические навыки\uD83D\uDD27",
-    "technical-skills-description": "Я Frontend-разработчик, создающий интерактивные веб-приложения с использованием следующих технологий: HTML, CSS, JS, React и Redux. В прошлом я работал в компании ITechArt на позиции Java Backend-разработчик с использованием Spring Boot, создавая API серверы с микросервисной архитектурой.",
+    "technical-skills-description": "Я Frontend-разработчик, создающий интерактивные веб-приложения с использованием следующих технологий: HTML, CSS, JS, React и Redux. В прошлом я работал в компании ITechArt на позиции Java Backend-разработчика с использованием Spring Boot, создавая API серверы с микросервисной архитектурой.",
     "languages": "Языки\uD83D\uDDE3\uFE0F",
     "languages-description": "Мой родной язык - русский, однако, я также разговариваю на итальянском (A2) и английском (~B2) достаточно хорошо, как мне кажется :)",
     "personal-info": "Немного обо мне\uD83E\uDDD1\uD83C\uDFFB",
-    "personal-info-description": "Мне 22 года, я живу в Беларуси и мне очень нравится кодить и изучать это каждый день. В свободное время я люблю обрабатывать фото в фотошопе и монтировать видео в Premiere Pro, также я люблю смотреть фильмы и сериалы со своей девушкой, общаться с друзьями и отлично проводить время. Я общительный, добрый и очень вежливый человек. Также я очень настойчивый, поскольку, если у меня возникают какие-либо проблемы, то я обещаю себе, что я обязательно найду способ их исправить. Я буду очень рад помочь Вам всем, чем только смогу\uD83D\uDE0A"
+    "personal-info-description": "Мне 22 года, я живу в Беларуси и мне очень нравится кодить и изучать это каждый день. В свободное время я люблю обрабатывать фото в фотошопе и монтировать видео в Premiere Pro, также я люблю смотреть фильмы и сериалы со своей девушкой, общаться с друзьями и отлично проводить время. Я общительный, добрый и очень вежливый человек. Также я очень настойчивый, поскольку, если у меня возникают какие-либо проблемы, то я обещаю себе, что я обязательно найду способ их исправить. Я буду очень рад помочь Вам всем, чем только смогу\uD83D\uDE0A",
+    "build": "Создал и разработал",
+    "button-text": "Открыть",
+    "slider-projects": [
+      {
+        "title": "Омнифуд",
+        "description": "OMNIFOOD"
+      },
+      {
+        "title": "Natours",
+        "description": "NATOURS"
+      },
+      {
+        "title": "Forkify",
+        "description": "FORKIFY"
+      },
+      {
+        "title": "Worldwise",
+        "description": "WORLDWISE"
+      },
+      {
+        "title": "React Pizza",
+        "description": "REACT PIZZA"
+      }
+    ]
   }
 }
