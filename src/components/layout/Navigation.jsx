@@ -4,10 +4,10 @@ import {FormattedMessage} from "react-intl";
 
 const Nav = styled.nav`
   background-image: ${styleVariables.colors.gradient};
-  margin: 0 auto 10rem;
-  padding: 0 5rem;
-  width: 100%;
-  height: 8rem;
+  margin: 3rem auto 10rem;
+  padding: 5rem;
+  width: 70%;
+  max-height: 4rem;
   border-radius: 2rem;
   display: flex;
   color: #ffdeeb;
@@ -29,7 +29,7 @@ const Li = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
   font-weight: 600;
 
   &:first-child {
@@ -61,7 +61,7 @@ export default function Navigation() {
                 </Li>
                 <Li><a href="#tech"><FormattedMessage id="technologies"/></a></Li>
                 <Li><a href="#projects"><FormattedMessage id="projects"/></a></Li>
-                <Li><a href="#"><FormattedMessage id="about-me"/></a></Li>
+                <Li><a href="#footer"><FormattedMessage id="contact-me"/></a></Li>
             </Ul>
         </Nav>
     )
