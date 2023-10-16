@@ -12,7 +12,7 @@ const HeaderStyled = styled.main`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr auto;
-  margin: 0 auto 15rem;
+  margin: 0 auto 30rem;
   font-size: 1.8rem;
   color: #ffdeeb;
   z-index: 2;
@@ -39,7 +39,7 @@ export default function Header() {
             <AnimatedBackground/>
             <TextContent/>
             <Avatar/>
-            <SocialMedia/>
+            <SocialMedia iconSize={70}/>
         </HeaderStyled>
     )
 }
