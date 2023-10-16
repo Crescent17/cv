@@ -25,6 +25,7 @@ const Button = styled.a`
   }
 
   &:hover {
+    color: #da1146;
     background-color: #212529;
   }
 
@@ -36,7 +37,7 @@ const Button = styled.a`
 
 export default function Buttons({currentSlide, setCurrentSlide, numberOfSlides}) {
     function handleNextSlide() {
-        if (currentSlide === 3) setCurrentSlide(1)
+        if (currentSlide === numberOfSlides) setCurrentSlide(1)
         else setCurrentSlide(currentSlide => currentSlide + 1)
     }
 
@@ -44,6 +45,7 @@ export default function Buttons({currentSlide, setCurrentSlide, numberOfSlides})
         if (currentSlide === 1) setCurrentSlide(numberOfSlides)
         else setCurrentSlide(currentSlide => currentSlide - 1)
     }
+
     return (
         <>
             <Button onClick={() => handlePreviousSlide()}>
