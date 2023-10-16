@@ -85,7 +85,8 @@ export default function Slider() {
     return (
         <SliderStyled id="projects" $number={currentSlide}>
             <Buttons currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} numberOfSlides={numberOfSlides}/>
-            {translations[locale]["slider-projects"].map((project, index) => <GridContainer number={index + 1}
+            {translations[locale]["slider-projects"].map((project, index) => <GridContainer key={index}
+                                                                                            number={index + 1}
                                                                                             currentSlide={currentSlide}>
                 <SlideImage img={`${index + 1}.png`}/>
                 <TextBlock>
