@@ -8,21 +8,25 @@ import {IntlProvider} from "react-intl";
 import {useState} from "react";
 import translations from './util/translations.json'
 import Footer from "./components/layout/Footer.jsx";
+import {useInView} from "react-intersection-observer";
 
 export default function App() {
     const [locale, setLocale] = useState('en')
     const messages = translations[locale]
+    const {ref, inView, entry} = useInView({
+        threshold: 0,
+    });
     return (
-        <div>
+        <>
             <GlobalStyle/>
             <IntlProvider locale={locale} messages={messages}>
                 <ChangeLanguage setLocale={setLocale}/>
-                <Navigation/>
-                <Header/>
+                <Navigation headerInView={entry?.isIntersecting}/>
+                <Header refFn={ref}/>
                 <Technologies/>
                 <Slider/>
                 <Footer/>
             </IntlProvider>
-        </div>
+        </>
     )
 }
