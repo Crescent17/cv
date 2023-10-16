@@ -10,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
       outline: 2px ridge #fa5252;
     }
   }
+  
+  #root {
+    position: absolute;
+    width: 100%;
+  }
 
   html {
     font-size: 62.5%;
