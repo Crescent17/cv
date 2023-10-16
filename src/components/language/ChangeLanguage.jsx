@@ -22,6 +22,11 @@ const Div = styled.div`
 const Img = styled.img`
   width: 4rem;
   height: 4rem;
+  transition: all .2s;
+  
+  &:hover {
+    transform: translateY(-10%);
+  }
 `
 
 export default function ChangeLanguage({setLocale}) {
