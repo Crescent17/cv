@@ -7,7 +7,7 @@ import {FormattedMessage} from "react-intl";
 const TechSection = styled.section`
   display: grid;
   max-width: 140rem;
-  margin: 0 auto 20rem;
+  margin: 0 auto 30rem;
   padding: 6rem 5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background: ${styleVariables.colors.gradient};
