@@ -7,6 +7,7 @@ const SocialMediaContainer = styled.div`
   justify-content: space-between;
   z-index: 1;
   gap: 1rem;
+  flex-direction: ${props => props.$direction};
 `
 
 const SocialMediaLink = styled.a`
@@ -29,11 +30,11 @@ export const Svg = styled.svg`
   overflow: visible;
 `
 
-export default function SocialMedia() {
+export default function SocialMedia({iconSize, flexDirection = "row"}) {
     return (
-        <SocialMediaContainer>
+        <SocialMediaContainer $direction={flexDirection}>
 
-            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70"
+            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={iconSize} height={iconSize}
                  viewBox="0 0 48 48">
                 <SocialMediaLink aria-label="Linkedin" target="_blank"
                                  href="https://www.linkedin.com/in/marat-hajybalayeu-14730220a/">
@@ -44,8 +45,8 @@ export default function SocialMedia() {
                 </SocialMediaLink>
             </Svg>
 
-            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70"
-                 height="70"
+            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={iconSize}
+                 height={iconSize}
                  viewBox="0 0 48 48">
                 <SocialMediaLink aria-label="Instagram" target="_blank" href="https://www.instagram.com/cresscent17/">
                     <path fill="#304ffe"
@@ -93,7 +94,7 @@ export default function SocialMedia() {
                 </SocialMediaLink>
             </Svg>
 
-            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70"
+            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={iconSize} height={iconSize}
                  viewBox="0 0 48 48">
                 <SocialMediaLink aria-label="Telegram" target="_blank" href="https://t.me/crescent17">
                     <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
@@ -106,7 +107,7 @@ export default function SocialMedia() {
                 </SocialMediaLink>
             </Svg>
 
-            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70"
+            <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={iconSize} height={iconSize}
                  viewBox="0 0 48 48">
                 <SocialMediaLink aria-label="Github" target="_blank" href="https://github.com/Crescent17">
                     <path fill="#fff"
