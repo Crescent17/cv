@@ -33,9 +33,9 @@ const HeaderStyled = styled.main`
   }
 `
 
-export default function Header() {
+export default function Header({refFn}) {
     return (
-        <HeaderStyled>
+        <HeaderStyled ref={refFn}>
             <AnimatedBackground/>
             <TextContent/>
             <Avatar/>
