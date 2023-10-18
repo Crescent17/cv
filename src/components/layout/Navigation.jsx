@@ -62,6 +62,9 @@ const CloseMenu = styled.svg`
     top: 3rem;
     right: 1.5rem;
   }
+  @media (max-width: 23rem) {
+    right: .5rem;
+  }
 `
 
 
