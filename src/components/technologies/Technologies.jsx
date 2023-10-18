@@ -9,12 +9,28 @@ const TechSection = styled.section`
   max-width: 140rem;
   margin: 0 auto 30rem;
   padding: 6rem 5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   background: ${styleVariables.colors.gradient};
   border-radius: 2rem;
   grid-gap: 4rem;
   position: relative;
   overflow: hidden;
+  
+  @media (max-width: 95em) {
+    max-width: 100rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 86rem) {
+    margin-bottom: 15rem;
+  }
+  @media (max-width: 60rem) {
+    max-width: 80rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 48rem) {
+    max-width: 60rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 
 const Video = styled.video`
@@ -44,15 +60,28 @@ const H2 = styled.h2`
   &:hover {
     transform: skewX(10deg) scale(1.1);
   }
+
+  @media (max-width: 48rem) {
+    font-size: 3rem;
+  }
+  @media (max-width: 32rem) {
+    font-size: 2.4rem;
+  }
 `
 const H3 = styled.h3`
   font-size: 3rem;
   color: #fff;
+  @media (max-width: 48rem) {
+    font-size: 2.4rem;
+  }
+  @media (max-width: 32rem) {
+    font-size: 1.6rem;
+  }
 `
 
-export default function Technologies() {
+export default function Technologies({techSection}) {
     return (
-        <TechSection id="tech">
+        <TechSection ref={techSection}>
             <Video id="background-video" autoPlay loop muted>
                 <source src="/video/video%20(2160p).mp4" type="video/mp4"/>
             </Video>
