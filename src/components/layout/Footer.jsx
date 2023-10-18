@@ -120,7 +120,7 @@ export default function Footer({footer}) {
                 </ContactContainer>
             </Div>
             <Div>
-                <Img src="/img/Logo.png"/>
+                <Img src="/img/Logo.png" alt="Crescent dev logo"/>
                 <SocialMedia iconSize={50}/>
             </Div>
             <Div>
