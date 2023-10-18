@@ -51,6 +51,11 @@ const OpenMenu = styled.svg`
     margin-right: 1rem;
     position: ${props => props.$menuIsOpened ? 'sticky' : 'static'};
   }
+  @media (max-width: 23rem) {
+    margin-right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `
 
 export default function Header({headerInView, setLocale, techSection, projectSection, footer}) {

@@ -42,6 +42,12 @@ const Img = styled.img`
   @media(max-width: 60rem) {
     grid-row: 1 / 2;
   }
+  @media(max-width: 32rem) {
+    width: 25rem;
+  }
+  @media (max-width: 23rem) {
+    width: 20rem;
+  }
 `
 
 const FigCaption = styled.figcaption`

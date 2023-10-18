@@ -27,6 +27,10 @@ const Img = styled.img`
   &:hover {
     transform: translateY(-10%);
   }
+  @media (max-width: 23rem) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `
 
 export default function ChangeLanguage({setLocale}) {

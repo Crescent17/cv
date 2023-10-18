@@ -10,6 +10,9 @@ const LogoContainer = styled.div`
 const LogoImg = styled.img`
   height: 10rem;
   margin-right: .5rem;
+  @media (max-width: 23rem) {
+    height: 7rem;
+  }
 `
 
 const Brand = styled.p`

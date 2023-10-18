@@ -32,6 +32,10 @@ export const Svg = styled.svg`
     width: 6rem;
     height: 6rem;
   }
+  @media (max-width: 48rem) {
+    width: 4rem;
+    height: 5rem;
+  }
 `
 
 export default function SocialMedia({iconSize, flexDirection = "row"}) {

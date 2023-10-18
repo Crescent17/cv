@@ -38,6 +38,12 @@ const AboutMeStyled = styled.section`
   @media (max-width: 36rem) {
     padding: 3rem 1.4rem;
   }
+  @media (max-width: 32rem) {
+    max-width: 45rem;
+  }
+  @media (max-width: 23rem) {
+    max-width: 30rem;
+  }
 `
 
 export default function AboutMe({refFn}) {
