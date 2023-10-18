@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Slide = styled.div`
-  height: 70rem;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -9,7 +9,13 @@ const Slide = styled.div`
   transition: all 1s;
   grid-column: 1 / 2;
   background: url("/img/${props => props.$img}") no-repeat;
-  background-size: contain;
+  background-size: cover;
+  @media (max-width: 57rem) {
+    grid-row: 1 / 2;
+    grid-column: 1;
+    background-size: cover;
+    background-position: center;
+  }
 `
 
 export default function SlideImage({img}) {
