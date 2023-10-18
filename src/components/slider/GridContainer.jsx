@@ -12,12 +12,15 @@ const Grid = styled.div`
   transform: translateX(${props => {
     return `${(props.$number - props.$currentSlide) * 100}%`
   }});
+  @media(max-width: 57rem) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 `
 
 export default function GridContainer({number, currentSlide, children}) {
     return (
         <Grid $number={number} $currentSlide={currentSlide}>
-            Hello
             {children}
         </Grid>
     )
