@@ -83,7 +83,7 @@ export default function Technologies({techSection}) {
     return (
         <TechSection ref={techSection}>
             <Video id="background-video" autoPlay loop muted>
-                <source src="/video/video%20(2160p).mp4" type="video/mp4"/>
+                <source src="/video/bgvideo.mp4" type="video/mp4"/>
             </Video>
             <H2><FormattedMessage id="technologies"/></H2>
             <TechCard>

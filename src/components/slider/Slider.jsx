@@ -127,7 +127,7 @@ export default function Slider({projectSection}) {
                     <GridContainer key={index}
                                    number={index + 1}
                                    currentSlide={currentSlide}>
-                        <SlideImage img={`${index + 1}.png`}/>
+                        <SlideImage img={`${index + 1}.jpg`}/>
                         <TextBlock>
                             <Heading>{project.title}</Heading>
                             <Description>{project.description}</Description>
