@@ -33,7 +33,6 @@ const HeaderStyled = styled.header`
   }
   @media (max-width: 57rem) {
     width: 100%;
-    border-radius: 0;
     margin: 0 auto 5rem;
   }
 `
