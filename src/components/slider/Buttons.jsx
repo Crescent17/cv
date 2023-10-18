@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {styleVariables} from "../../util/styleVariables.js";
 
-const Button = styled.a`
+const Button = styled.button`
   display: flex;
   background: ${styleVariables.colors.black};
   color: ${styleVariables.colors.white};
@@ -23,7 +23,7 @@ const Button = styled.a`
 
   &:first-child {
     left: 2rem;
-    @media(max-width: 53rem) {
+    @media (max-width: 53rem) {
       left: -2.2rem;
     }
   }
@@ -37,7 +37,8 @@ const Button = styled.a`
     box-shadow: -3px 1px 2px ${styleVariables.colors.black};
     transform: translateY(-43%);
   }
-  @media(max-width: 53rem) {
+
+  @media (max-width: 53rem) {
     right: -2.2rem;
   }
 `
