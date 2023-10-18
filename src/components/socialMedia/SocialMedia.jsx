@@ -28,6 +28,10 @@ const SocialMediaLink = styled.a`
 export const Svg = styled.svg`
   stroke: black;
   overflow: visible;
+  @media(max-width: 79rem) {
+    width: 6rem;
+    height: 6rem;
+  }
 `
 
 export default function SocialMedia({iconSize, flexDirection = "row"}) {
