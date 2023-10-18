@@ -8,6 +8,18 @@ import Buttons from "./Buttons.jsx";
 import translations from "../../util/translations.json"
 import {FormattedMessage, useIntl} from "react-intl";
 
+const SliderWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 120rem;
+  position: relative;
+  @media (max-width: 70rem) {
+    max-width: 100rem;
+  }
+  @media (max-width: 57rem) {
+    max-width: 100rem;
+  }
+`
+
 const SliderStyled = styled.section`
   position: relative;
   height: 60rem;
@@ -15,6 +27,12 @@ const SliderStyled = styled.section`
   border-radius: 20px 20px 0 0;
   overflow: hidden;
   margin: 0 auto 30rem;
+  @media (max-width: 86rem) {
+    margin-bottom: 15rem;
+  }
+  @media (max-width: 70rem) {
+    max-width: 80rem;
+  }
 `
 
 const TextBlock = styled.div`
@@ -27,6 +45,12 @@ const TextBlock = styled.div`
   background: ${styleVariables.colors.gradient};
   display: flex;
   flex-direction: column;
+  @media (max-width: 95rem) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 57rem) {
+    grid-row: 2 / 3;
+  }
 `
 
 const Heading = styled.h2`
@@ -34,7 +58,7 @@ const Heading = styled.h2`
   grid-column: 1 / -1;
   justify-self: center;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.4rem;
   text-shadow: -4px 4px 1px black;
   transition: all .2s;
   letter-spacing: 10px;
@@ -45,10 +69,18 @@ const Heading = styled.h2`
   &:hover {
     transform: skewX(10deg) scale(1.1);
   }
+
+  @media (max-width: 57rem) {
+    font-size: 2.6rem;
+  }
 `
 
 const Description = styled.p`
-  font-size: 2.4rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  @media (max-width: 57rem) {
+    font-size: 1.6rem;
+  }
 `
 
 const Button = styled.a`
@@ -74,28 +106,37 @@ const Button = styled.a`
     background-color: transparent;
     transform: translateY(-.5rem);
   }
+
+  @media (max-width: 57rem) {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+  }
 `
 
 const numberOfSlides = translations.en["slider-projects"].length
 
-export default function Slider() {
+export default function Slider({projectSection}) {
     const [currentSlide, setCurrentSlide] = useState(1)
     const locale = useIntl().locale
 
     return (
-        <SliderStyled id="projects" $number={currentSlide}>
+        <SliderWrapper ref={projectSection}>
             <Buttons currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} numberOfSlides={numberOfSlides}/>
-            {translations[locale]["slider-projects"].map((project, index) => <GridContainer key={index}
-                                                                                            number={index + 1}
-                                                                                            currentSlide={currentSlide}>
-                <SlideImage img={`${index + 1}.png`}/>
-                <TextBlock>
-                    <Heading>{project.title}</Heading>
-                    <Description>{project.description}</Description>
-                    <Button target="_blank" href={project.link}><FormattedMessage id="button-text"/></Button>
-                </TextBlock>
-            </GridContainer>)}
-            <Dots numOfSlides={numberOfSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
-        </SliderStyled>
+            <SliderStyled id="projects" $number={currentSlide}>
+                {translations[locale]["slider-projects"].map((project, index) =>
+                    <GridContainer key={index}
+                                   number={index + 1}
+                                   currentSlide={currentSlide}>
+                        <SlideImage img={`${index + 1}.png`}/>
+                        <TextBlock>
+                            <Heading>{project.title}</Heading>
+                            <Description>{project.description}</Description>
+                            <Description>{project.stack}</Description>
+                            <Button target="_blank" href={project.link}><FormattedMessage id="button-text"/></Button>
+                        </TextBlock>
+                    </GridContainer>)}
+                <Dots numOfSlides={numberOfSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
+            </SliderStyled>
+        </SliderWrapper>
     )
 }
