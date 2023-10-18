@@ -22,6 +22,9 @@ const Button = styled.a`
 
   &:first-child {
     left: 2rem;
+    @media(max-width: 53rem) {
+      left: -2.2rem;
+    }
   }
 
   &:hover {
@@ -32,6 +35,9 @@ const Button = styled.a`
   &:active {
     box-shadow: -3px 1px 2px black;
     transform: translateY(-43%);
+  }
+  @media(max-width: 53rem) {
+    right: -2.2rem;
   }
 `
 
