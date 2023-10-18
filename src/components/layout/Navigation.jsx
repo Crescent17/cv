@@ -70,7 +70,7 @@ const CloseMenu = styled.svg`
 
 function scrollTo(offSetOfElement, scrollToElement) {
     window.scrollTo({
-        top: scrollToElement.current.offsetTop - offSetOfElement.current.offsetHeight,
+        top: scrollToElement.current.offsetTop - offSetOfElement.current.offsetHeight - '30',
         behavior: "smooth"
     })
 }
