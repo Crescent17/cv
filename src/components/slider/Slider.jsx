@@ -33,6 +33,9 @@ const SliderStyled = styled.section`
   @media (max-width: 70rem) {
     max-width: 80rem;
   }
+  @media (max-width: 57rem) {
+    border-radius: 20px;
+  }
 `
 
 const TextBlock = styled.div`
