@@ -25,6 +25,14 @@ const Dot = styled.div`
     width: 3.5rem;
     height: 3.5rem;
     background-color: #12b886;
+    @media(max-width: 57rem) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  @media(max-width: 57rem) {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 `
 
