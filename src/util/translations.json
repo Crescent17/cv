@@ -15,27 +15,32 @@
     "slider-projects": [
       {
         "title": "Omnifood",
-        "description": "Omnifood",
+        "stack": "Tech stack: HTML, CSS",
+        "description": "This website is created for those who don't want to overthink what to eat, because on this website you can simply subscribe  and eat a variety of delicious dishes every day, which, by the way, are also healthy. Try it and you won't be able to stop!",
         "link": "https://omnifood-crescent.netlify.app/"
       },
       {
         "title": "Natours",
-        "description": "Natours",
+        "stack": "Tech stack: HTML, CSS, SASS",
+        "description": "If you are looking for adventures with a company of friends, you've come to the right place! You don't have to worry about where to get your tent, skis and other equipment we will do everything for you! Here you will find a plenty of tours for each season and each weather!",
         "link": "https://natours-crescent.netlify.app/"
       },
       {
         "title": "Forkify",
-        "description": "Forkify",
+        "stack": "Tech stack: HTML, CSS, JavaScript",
+        "description": "Who doesn't want to eat well? On this website you can search among almost 1000000 of different recipes of any cuisine. If you are cooking for a company, there is also a function to count a portion for a certain amount of people.",
         "link": "https://forkify-crescent.netlify.app/"
       },
       {
         "title": "Worldwise",
-        "description": "Worldwise",
+        "stack": "Tech stack: CSS, React, React Router, Leaflet",
+        "description": "Travelling allows us to get acquainted with other nationalities and cultures. If you have already visited lots of remarkable countries and marvelous places, you can use this application to mark them on the map to not forget.",
         "link": "https://worldwise-crescent.netlify.app/"
       },
       {
         "title": "React Pizza",
-        "description": "This is a web application built with React, Redux and Tailwind. It's a pizzeria website where you can order pizza online",
+        "stack": "Tech stack: React, Redux, Tailwind",
+        "description": "Pizza is the most popular food in the world. On this website you can order it without any problem. Our chefs have studied for years with the best Italian mentors and worked out hundreds of pizza variations down to the smallest detail. Here you will certainly find a pizza for your taste, so visit us and give it a try!",
         "link": "https://react-pizza-crescent.netlify.app/"
       }
     ]
@@ -55,24 +60,34 @@
     "button-text": "Открыть",
     "slider-projects": [
       {
-        "title": "Омнифуд",
-        "description": "OMNIFOOD"
+        "title": "Omnifood",
+        "stack": "Используемые технологии: HTML, CSS",
+        "description": "Этот веб-сайт создан для тех, кто не хочет думать часами о том, что бы поесть, потому что на этом сайте Вы можете просто оформить подписку и ежедневно питаться различными вкуснейшими блюдами, которые, кстати, еще и полезные. Попробуйте и Вы не сможете остановиться!",
+        "link": "https://omnifood-crescent.netlify.app/"
       },
       {
         "title": "Natours",
-        "description": "NATOURS"
+        "stack": "Используемые технологии: HTML, CSS, SASS",
+        "description": "Если Вы ищете приключений с компанией друзей, то Вы пришли по адресу! Вам больше не нужно думать о том, где взять палатку, лыжи или другую экипировку мы все сделаем за Вас! Здесь Вы найдете множество различных туров на любой сезон и на любую погоду!",
+        "link": "https://natours-crescent.netlify.app/"
       },
       {
         "title": "Forkify",
-        "description": "FORKIFY"
+        "stack": "Используемые технологии: HTML, CSS, JavaScript",
+        "description": "Кто не любит вкусно поесть? На этом веб-сайте Вы можете искать среди 1.000.000 различных рецептов любой кухни. Если же Вы готовите для компании, то у нас есть отличная функция, чтобы рассчитать ингредиенты на различное количество порций.",
+        "link": "https://forkify-crescent.netlify.app/"
       },
       {
         "title": "Worldwise",
-        "description": "WORLDWISE"
+        "stack": "Используемые технологии: CSS, React, React Router, Leaflet",
+        "description": "Путешествия позволяют нам знакомиться с разными нациями и культурами. Если Вы уже посетили множество удивительных стран и чудесных мест, то Вы можете использовать это приложение, чтобы отметить их на карте и не забывать про них.",
+        "link": "https://worldwise-crescent.netlify.app/"
       },
       {
         "title": "React Pizza",
-        "description": "REACT PIZZA"
+        "stack": "Используемые технологии: React, Redux, Tailwind",
+        "description": "Пицца - самое популярное блюдо в мире. На этом сайте Вы можете заказать пиццу без каких-либо проблем. Наши повара годами учились у лучших итальянских наставников и разрабатывали до мелочей отрабатывали сотни вариаций пицц. Здесь Вы точно найдете пиццу на Ваш вкус, так что приходите к нам и пробуйте!",
+        "link": "https://react-pizza-crescent.netlify.app/"
       }
     ]
   }
