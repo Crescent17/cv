@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const Button = styled.a`
   display: flex;
-  background: #000;
-  color: #fff;
+  background: ${styleVariables.colors.black};
+  color: ${styleVariables.colors.white};
   cursor: pointer;
   width: 5rem;
   height: 5rem;
@@ -18,7 +19,7 @@ const Button = styled.a`
   right: 2rem;
   z-index: 1;
   transition: all .2s;
-  box-shadow: -3px 1px 3px black;
+  box-shadow: -3px 1px 3px ${styleVariables.colors.black};
 
   &:first-child {
     left: 2rem;
@@ -28,12 +29,12 @@ const Button = styled.a`
   }
 
   &:hover {
-    color: #da1146;
-    background-color: #212529;
+    color: ${styleVariables.colors.hover};
+    background-color: ${styleVariables.colors.darkGrey};
   }
 
   &:active {
-    box-shadow: -3px 1px 2px black;
+    box-shadow: -3px 1px 2px ${styleVariables.colors.black};
     transform: translateY(-43%);
   }
   @media(max-width: 53rem) {

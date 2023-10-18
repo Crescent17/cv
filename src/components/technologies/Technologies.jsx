@@ -10,7 +10,7 @@ const TechSection = styled.section`
   margin: 0 auto 30rem;
   padding: 6rem 5rem;
   grid-template-columns: repeat(5, 1fr);
-  background: ${styleVariables.colors.gradient};
+  background: ${styleVariables.colors.mainGradient};
   border-radius: 2rem;
   grid-gap: 4rem;
   position: relative;
@@ -49,9 +49,9 @@ const Video = styled.video`
 const H2 = styled.h2`
   grid-column: 1 / -1;
   justify-self: center;
-  color: #fff;
+  color: ${styleVariables.colors.white};
   font-size: 4rem;
-  text-shadow: -4px 4px 1px black;
+  text-shadow: -4px 4px 1px ${styleVariables.colors.black};
   transition: all .2s;
   letter-spacing: 10px;
   z-index: 1;
@@ -70,7 +70,7 @@ const H2 = styled.h2`
 `
 const H3 = styled.h3`
   font-size: 3rem;
-  color: #fff;
+  color: ${styleVariables.colors.white};
   @media (max-width: 48rem) {
     font-size: 2.4rem;
   }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {FormattedMessage} from "react-intl";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const Figure = styled.figure`
   @media(max-width: 60rem) {
@@ -14,7 +15,7 @@ const Img = styled.img`
   animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   transition: all 1s ease-in-out;
-  border: 5px ridge #495057;
+  border: 5px ridge ${styleVariables.colors.grey};
   z-index: 5;
 
   @keyframes morph {
@@ -52,7 +53,7 @@ const Img = styled.img`
 
 const FigCaption = styled.figcaption`
   text-align: center;
-  text-shadow: -3px 4px 3px black;
+  text-shadow: -3px 4px 3px ${styleVariables.colors.black};
   font-size: 3rem;
 `
 

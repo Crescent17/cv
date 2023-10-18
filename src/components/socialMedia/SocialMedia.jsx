@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const SocialMediaContainer = styled.div`
   padding: 2rem 3rem;
@@ -12,21 +13,21 @@ const SocialMediaContainer = styled.div`
 
 const SocialMediaLink = styled.a`
   transition: all .5s;
-  filter: drop-shadow(-1px 1px 1px black);
+  filter: drop-shadow(-1px 1px 1px ${styleVariables.colors.black});
 
   &:hover {
     transform: translateY(-1rem);
-    filter: drop-shadow(-1px 4px 4px black);
+    filter: drop-shadow(-1px 4px 4px ${styleVariables.colors.black});
   }
 
   &:active {
     transform: translateY(-.6rem);
-    filter: drop-shadow(-1px 4px 2px black);
+    filter: drop-shadow(-1px 4px 2px ${styleVariables.colors.black});
   }
 `
 
 export const Svg = styled.svg`
-  stroke: black;
+  stroke: ${styleVariables.colors.black};
   overflow: visible;
   @media(max-width: 79rem) {
     width: 6rem;

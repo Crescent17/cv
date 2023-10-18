@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const Background = styled.div`
   position: absolute;
@@ -11,7 +12,7 @@ const Background = styled.div`
 
 const TechSvg = styled.svg`
   position: relative;
-  stroke: black;
+  stroke: ${styleVariables.colors.black};
   filter: opacity(.2) grayscale(100%);
   z-index: 0;
   width: 5rem;

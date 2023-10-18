@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const DotsContainer = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ const Dot = styled.div`
   height: 2.5rem;
   border-radius: 500px;
   cursor: pointer;
-  border: 2px solid #12b886;
+  border: 2px solid ${styleVariables.colors.greenLight};
   top: 0;
   left: 0;
   transition: all .5s;
@@ -24,7 +25,7 @@ const Dot = styled.div`
   &:nth-child(${props => props.$currentslide}) {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: #12b886;
+    background-color: ${styleVariables.colors.greenLight};
     @media(max-width: 57rem) {
       width: 2.5rem;
       height: 2.5rem;

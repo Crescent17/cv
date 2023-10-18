@@ -1,19 +1,20 @@
 import styled from "styled-components";
 import SocialMedia from "../socialMedia/SocialMedia.jsx";
 import {FormattedMessage} from "react-intl";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const FooterStyled = styled.footer`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  background: ${styleVariables.colors.secondaryGradient};
   padding: 3rem 0;
   min-width: 20rem;
   min-height: 5rem;
   font-size: 2.4rem;
-  @media(max-width: 79rem) {
+  @media (max-width: 79rem) {
     font-size: 2rem;
   }
-  @media(max-width: 48rem) {
+  @media (max-width: 48rem) {
     font-size: 1.6rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -34,17 +35,17 @@ const Div = styled.div`
 
   &:first-child {
     align-items: start;
-    @media(max-width: 48rem) {
+    @media (max-width: 48rem) {
       grid-row: 2 / 3;
     }
   }
-  
+
   &:not(:first-child) {
     border-left: 1px solid rgba(255, 255, 255, 0.56);
   }
 
   &:nth-child(2) {
-    @media(max-width: 48rem) {
+    @media (max-width: 48rem) {
       grid-column: 1 / -1;
       border-left: none;
     }
@@ -53,7 +54,7 @@ const Div = styled.div`
   @media (max-width: 79rem) {
     padding: 1rem 5rem;
   }
-  @media(max-width: 60rem) {
+  @media (max-width: 60rem) {
     padding: 1rem 2rem;
   }
 `
@@ -67,7 +68,7 @@ const ContactContainer = styled.a`
 const Img = styled.img`
   width: 15rem;
   height: 15rem;
-  @media(max-width: 32rem) {
+  @media (max-width: 32rem) {
     width: 10rem;
     height: 10rem;
   }

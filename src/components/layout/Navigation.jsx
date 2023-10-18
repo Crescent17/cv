@@ -5,7 +5,7 @@ import {styleVariables} from "../../util/styleVariables.js";
 const Nav = styled.nav`
   display: flex;
   transition: all 2s;
-  background: ${styleVariables.colors.gradient};
+  background: ${styleVariables.colors.mainGradient};
   @media (max-width: 46rem) {
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@ const Li = styled.li`
     transition: all 1s;
 
     &:hover {
-      color: #da1146;
+      color: ${styleVariables.colors.hover};
     }
   }
 `
@@ -50,7 +50,7 @@ const Li = styled.li`
 const CloseMenu = styled.svg`
   display: none;
   cursor: pointer;
-  fill: #fff;
+  fill: ${styleVariables.colors.white};
   width: 4rem;
   height: 4rem;
   align-self: center;

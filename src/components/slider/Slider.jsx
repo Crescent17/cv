@@ -37,12 +37,12 @@ const SliderStyled = styled.section`
 
 const TextBlock = styled.div`
   padding: 4rem;
-  color: #fff;
+  color: ${styleVariables.colors.white};
   font-size: 3rem;
   width: 100%;
   height: 100%;
   grid-column: 2 / 3;
-  background: ${styleVariables.colors.gradient};
+  background: ${styleVariables.colors.mainGradient};
   display: flex;
   flex-direction: column;
   @media (max-width: 95rem) {
@@ -57,9 +57,9 @@ const Heading = styled.h2`
   text-align: center;
   grid-column: 1 / -1;
   justify-self: center;
-  color: #fff;
+  color: ${styleVariables.colors.white};
   font-size: 3.4rem;
-  text-shadow: -4px 4px 1px black;
+  text-shadow: -4px 4px 1px ${styleVariables.colors.black};
   transition: all .2s;
   letter-spacing: 10px;
   z-index: 1;
@@ -85,7 +85,7 @@ const Description = styled.p`
 
 const Button = styled.a`
   display: inline-block;
-  background-color: #000;
+  background-color: ${styleVariables.colors.black};
   color: inherit;
   cursor: pointer;
   padding: 1rem 3rem;
@@ -101,8 +101,8 @@ const Button = styled.a`
   border: 1px solid transparent;
 
   &:hover {
-    color: #da1146;
-    border: 1px solid #fff;
+    color: ${styleVariables.colors.hover};
+    border: 1px solid ${styleVariables.colors.white};
     background-color: transparent;
     transform: translateY(-.5rem);
   }

@@ -5,7 +5,7 @@ const TextContentStyled = styled.div`
   z-index: 2;
   grid-row: 1 / -1;
   align-self: center;
-  @media(max-width: 60rem) {
+  @media (max-width: 60rem) {
     grid-row: 2 / 3;
   }
 `

@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {styleVariables} from "./styleVariables.js";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -7,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
 
     &:focus-visible {
-      outline: 2px ridge #fa5252;
+      outline: 2px ridge ${styleVariables.colors.outline};
     }
   }
 
@@ -32,9 +33,9 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: ${styleVariables.fonts.oswald};
     overflow-x: hidden;
-    color: #ffdeeb;;
+    color: ${styleVariables.colors.pinkLight};;
   }
 
   a {

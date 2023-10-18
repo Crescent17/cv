@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import {useIntl} from "react-intl";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const Div = styled.div`
-  color: #fff;
+  color: ${styleVariables.colors.white};
   column-gap: 4rem;
   font-size: 3rem;
 
@@ -10,7 +11,7 @@ const Div = styled.div`
     transition: all 1s;
 
     &:hover {
-      color: #da1146;
+      color: ${styleVariables.colors.hover};
     }
   }
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {styleVariables} from "../../util/styleVariables.js";
 
 const TechCardStyled = styled.div`
   position: relative;
@@ -9,12 +10,12 @@ const TechCardStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: -2px 5px 2px black;
+  box-shadow: -2px 5px 2px ${styleVariables.colors.black};
   transition: all .2s;
   overflow: hidden;
 
   &:hover {
-    box-shadow: -2px 5px 5px black;
+    box-shadow: -2px 5px 5px ${styleVariables.colors.black};
     transform: translateY(-2rem);
   }
 `
