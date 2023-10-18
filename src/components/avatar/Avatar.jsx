@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import {FormattedMessage} from "react-intl";
 
+const Figure = styled.figure`
+  @media(max-width: 60rem) {
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+`
+
 const Img = styled.img`
   justify-self: end;
   width: 40rem;
@@ -26,6 +33,15 @@ const Img = styled.img`
       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     }
   }
+  @media(max-width: 74rem) {
+    width: 35rem;
+  }
+  @media(max-width: 70rem) {
+    width: 30rem;
+  }
+  @media(max-width: 60rem) {
+    grid-row: 1 / 2;
+  }
 `
 
 const FigCaption = styled.figcaption`
@@ -36,9 +52,9 @@ const FigCaption = styled.figcaption`
 
 export default function Avatar() {
     return (
-        <figure>
-            <Img src="/img/Profile.png" alt="My profile photo"/>
+        <Figure>
+            <Img src="/img/avatar.jpg" alt="My profile photo"/>
             <FigCaption><FormattedMessage id="name"/></FigCaption>
-        </figure>
+        </Figure>
     )
 }
