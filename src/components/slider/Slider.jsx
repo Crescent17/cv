@@ -1,40 +1,25 @@
-import {useState} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import styled from "styled-components";
-import Dots from "./Dots.jsx";
+import 'swiper/css'
+import 'swiper/css/pagination'
 import {styleVariables} from "../../util/styleVariables.js";
-import SlideImage from "./SlideImage.jsx";
-import GridContainer from "./GridContainer.jsx";
-import Buttons from "./Buttons.jsx";
-import translations from "../../util/translations.json"
 import {FormattedMessage, useIntl} from "react-intl";
+import translations from "../../util/translations.json"
+import '../../util/swiper.scss'
+import {Pagination} from "swiper/modules";
+import GridContainer from "./GridContainer.jsx";
+import SlideImage from "./SlideImage.jsx";
+import Buttons from "./Buttons.jsx";
 
-const SliderWrapper = styled.div`
-  margin: 0 auto;
-  max-width: 120rem;
+const SwiperContainer = styled.div`
   position: relative;
-  @media (max-width: 70rem) {
-    max-width: 100rem;
+  width: 77%;
+  margin: 0 auto 20rem;
+  @media (max-width: 53rem) {
+    width: 80%;
   }
-  @media (max-width: 57rem) {
-    max-width: 100rem;
-  }
-`
-
-const SliderStyled = styled.section`
-  position: relative;
-  height: 60rem;
-  max-width: 100rem;
-  border-radius: 20px 20px 0 0;
-  overflow: hidden;
-  margin: 0 auto 30rem;
-  @media (max-width: 86rem) {
-    margin-bottom: 15rem;
-  }
-  @media (max-width: 70rem) {
-    max-width: 80rem;
-  }
-  @media (max-width: 57rem) {
-    border-radius: 20px;
+  @media (max-width: 36rem) {
+    width: 100%;
   }
 `
 
@@ -42,12 +27,11 @@ const TextBlock = styled.div`
   padding: 4rem;
   color: ${styleVariables.colors.white};
   font-size: 3rem;
-  width: 100%;
-  height: 100%;
   grid-column: 2 / 3;
   background: ${styleVariables.colors.mainGradient};
   display: flex;
   flex-direction: column;
+  min-height: 40rem;
   @media (max-width: 95rem) {
     font-size: 2.5rem;
   }
@@ -76,6 +60,9 @@ const Heading = styled.h2`
   @media (max-width: 57rem) {
     font-size: 2.6rem;
   }
+  @media (max-width: 27rem) {
+    font-size: 1.4rem;
+  }
 `
 
 const Description = styled.p`
@@ -83,6 +70,9 @@ const Description = styled.p`
   margin-bottom: 1.5rem;
   @media (max-width: 57rem) {
     font-size: 1.6rem;
+  }
+  @media (max-width: 57rem) {
+    font-size: 1.4rem;
   }
 `
 
@@ -116,30 +106,29 @@ const Button = styled.a`
   }
 `
 
-const numberOfSlides = translations.en["slider-projects"].length
 
 export default function Slider({projectSection}) {
-    const [currentSlide, setCurrentSlide] = useState(1)
     const locale = useIntl().locale
-
     return (
-        <SliderWrapper ref={projectSection}>
-            <Buttons currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} numberOfSlides={numberOfSlides}/>
-            <SliderStyled id="projects" $number={currentSlide}>
+        <SwiperContainer ref={projectSection}>
+            <Swiper spaceBetween={200} slidesPerView={1} grabCursor={true} modules={[Pagination]} pagination={{
+                clickable: true,
+            }}>
                 {translations[locale]["slider-projects"].map((project, index) =>
-                    <GridContainer key={index}
-                                   number={index + 1}
-                                   currentSlide={currentSlide}>
-                        <SlideImage img={`${index + 1}.jpg`}/>
-                        <TextBlock>
-                            <Heading>{project.title}</Heading>
-                            <Description>{project.description}</Description>
-                            <Description>{project.stack}</Description>
-                            <Button target="_blank" href={project.link}><FormattedMessage id="button-text"/></Button>
-                        </TextBlock>
-                    </GridContainer>)}
-                <Dots numOfSlides={numberOfSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
-            </SliderStyled>
-        </SliderWrapper>
+                    <SwiperSlide key={index}>
+                        <GridContainer>
+                            <SlideImage img={`${index + 1}.jpg`}/>
+                            <TextBlock>
+                                <Heading>{project.title}</Heading>
+                                <Description>{project.description}</Description>
+                                <Description>{project.stack}</Description>
+                                <Button target="_blank" href={project.link}><FormattedMessage
+                                    id="button-text"/></Button>
+                            </TextBlock>
+                        </GridContainer>
+                    </SwiperSlide>)}
+                <Buttons/>
+            </Swiper>
+        </SwiperContainer>
     )
 }
