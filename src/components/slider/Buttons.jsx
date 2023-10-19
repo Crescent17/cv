@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {styleVariables} from "../../util/styleVariables.js";
+import {useSwiper} from "swiper/react";
 
 const Button = styled.button`
   display: flex;
@@ -20,11 +21,14 @@ const Button = styled.button`
   z-index: 1;
   transition: all .2s;
   box-shadow: -3px 1px 3px ${styleVariables.colors.black};
+  @media(max-width: 25rem) {
+    right: 1rem;
+  }
 
   &:first-child {
     left: 2rem;
-    @media (max-width: 53rem) {
-      left: -2.2rem;
+    @media(max-width: 25rem) {
+      left: 1rem;
     }
   }
 
@@ -37,13 +41,11 @@ const Button = styled.button`
     box-shadow: -3px 1px 2px ${styleVariables.colors.black};
     transform: translateY(-43%);
   }
-
-  @media (max-width: 53rem) {
-    right: -2.2rem;
-  }
 `
 
 export default function Buttons({currentSlide, setCurrentSlide, numberOfSlides}) {
+    const swiper = useSwiper()
+
     function handleNextSlide() {
         if (currentSlide === numberOfSlides) setCurrentSlide(1)
         else setCurrentSlide(currentSlide => currentSlide + 1)
@@ -55,13 +57,13 @@ export default function Buttons({currentSlide, setCurrentSlide, numberOfSlides})
     }
 
     return (
-        <>
-            <Button onClick={() => handlePreviousSlide()}>
+        <div>
+            <Button onClick={() => swiper.slidePrev()}>
                 &#10094;
             </Button>
-            <Button onClick={() => handleNextSlide()}>
+            <Button onClick={() => swiper.slideNext()}>
                 &#10095;
             </Button>
-        </>
+        </div>
     )
 }
