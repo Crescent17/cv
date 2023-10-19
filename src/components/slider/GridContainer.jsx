@@ -1,26 +1,23 @@
 import styled from "styled-components";
 
 const Grid = styled.div`
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   transition: all 1s;
-  transform: translateX(${props => {
-    return `${(props.$number - props.$currentSlide) * 100}%`
-  }});
-  @media(max-width: 57rem) {
+  @media (max-width: 57rem) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
 `
 
-export default function GridContainer({number, currentSlide, children}) {
+export default function GridContainer({children}) {
     return (
-        <Grid $number={number} $currentSlide={currentSlide}>
+        <Grid>
             {children}
         </Grid>
     )
