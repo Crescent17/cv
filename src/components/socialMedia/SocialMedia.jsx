@@ -46,7 +46,7 @@ export default function SocialMedia({iconSize, flexDirection = "row"}) {
             <Svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={iconSize} height={iconSize}
                  viewBox="0 0 48 48">
                 <SocialMediaLink aria-label="Linkedin" target="_blank"
-                                 href="https://www.linkedin.com/in/marat-hajybalayeu-14730220a/">
+                                 href="https://www.linkedin.com/in/marat-hajybalayeu">
                     <path fill="#0288D1"
                           d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path>
                     <path fill="#FFF"
